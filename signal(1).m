@@ -1,0 +1,34 @@
+t = [0:9]*25e-3;
+
+a = cos(2*pi*10*t);
+b = cos(2*pi*50*t);
+c = cos(2*pi*90*t);
+
+figure(1);
+subplot(3, 1, 1);
+plot(t,a);
+hold on;
+stem(t,a);
+title('a_a(nT)');
+xlabel('time [s]');
+ylabel('value');
+axis tight;
+hold off;
+subplot(3, 1, 2);
+plot(t,b);
+hold on;
+stem(t,b);
+title('b_a(nT)');
+xlabel('time [s]');
+ylabel('value');
+axis tight;
+hold off;
+subplot(3, 1, 3);
+plot(t,c);
+hold on;
+stem(t,c);
+title('c_a(nT)');
+xlabel('time [s]');
+ylabel('value');
+axis tight;
+hold off;
